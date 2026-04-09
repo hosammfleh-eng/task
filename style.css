@@ -1,0 +1,92 @@
+  .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2c3e50;
+            font-size: 1rem;
+        }
+
+        .form-group label::after {
+            content: "*";
+            color: #ff4757;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            outline: none;
+            transition: all 0.3s ease;
+            background: #fefefe;
+            box-sizing: border-box;
+        }
+
+        .form-group input:invalid {
+            border-color: #ff4757;
+            box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.2), 0 0 0 1px #ff4757 inset;
+            background-color: #fff8f8;
+        }
+
+        
+        .form-group input:invalid:focus {
+            box-shadow: 0 0 0 4px rgba(255, 71, 87, 0.3), 0 0 0 2px #ff4757 inset;
+            border-color: #ff4757;
+        }
+        .form-group input:valid {
+            border-color: #2ecc71;
+            box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
+            background-color: white;
+        }
+        .form-group input:valid:focus {
+            border-color: #27ae60;
+            box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.2);
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+         .form-group input:invalid {
+            animation: shake 0.2s ease-in-out 0s 2;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+         @media (max-width: 480px) {
+            .card {
+                padding: 25px;
+            }
+        }
